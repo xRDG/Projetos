@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="elementos"><a href="index.html"><i>Início</i></a></li>
+            <li class="elementos"><a href="SobreMim.html"><i>Sobre nós</a></li>
+            <li class="elementos"><a href="Curriculo.html"><i>Modalidades</i></a></li>
+            <li class="elementos"><a href="Novidades.html"><i>Novidades</i></a></li>
+            <li class="elementos"><a href="Contato.html"><i>Entre em contato conosco</i></a></li>
+        </ul><br>
+    </nav><br>
+
+
+    <h1>Em breve</h1>
+    <h2>Aplicativo MOV</h2>
+    <p>Um apicativo que téra inscrições facilitadas para as corridas, acompanhamento de percursos, tempos etc.
+        Além da abertura para interação entre os inscritos, criações de grupos e muito mais!
+    </p>
+    <img class="imagemnovidades" src="applogo.png">
+    <br>
+    <h2>Outras modalidades esportivas</h2>
+    <p>Visando agregar mais e mais pessoas, iremos realizar uma pesquisa para descobrir que outra modalidade vocês gostariam de ver por aqui. 
+        E a mais votada será abraçada e inclusa futuramente em nossos Modalidades</p><br>
+    
+        <p>Selecione a modalidade de acordo com sua numeração:</p>
+        <p>1- Corridas acima de 10km <br>2- Corridas somente para mulheres</p>
+
+Digite:
+<input id="numero">
+<button type="button" onclick="myFunction()">Enviar</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("numero").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x < 1 || x > 2) {
+    text = "Digite  um número válido";
+  } else {
+    text = "Sugestão enviada!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+    
+</body>
+<footer>
+    <p class="rodape">Dezembro/2023, Trabalho pontuado<br>Universidade Veiga de Almeida</p>
+</footer>
+</html>
